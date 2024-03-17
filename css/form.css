@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/banner.jpeg');
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    background: url('');
+    background-color: #0402286f;
+    height: 6em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+     
+    color: antiquewhite;
+    user-select: none;
+  }
+  
+.logo img {
+    width: 3em; /* dito Set ng width ng logo */
+  }
+
+
+.form{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    width: 400px;
+    height: auto;
+    color: goldenrod;
+    font-family: 'roboto', sans-serif;
+}
+
+.heading{
+    opacity: 0;
+    
+    text-align: center;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+input,
+.submit-btn{
+    text-align: center;
+    opacity: 0;
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    transition: .5s;
+    
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+input:focus,
+.submit-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+input:focus::placeholder{
+    color: #000;
+}
+
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+    opacity: 0;
+}
+
+.link{
+    opacity: 0;
+    text-align: center;
+    
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 30px auto;
+}
+
+.link:hover{
+    color: #fff;
+}
+
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-top: 10px solid rgb(255, 37, 37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}
+ 
+  .bottom-banner {
+    background: url('');
+    background-position: center;
+    background-color: #0402287c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
